@@ -2,49 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  />
-  <title>Open post</title>
-  <meta
-    name="description"
-    content="Open post in the mobile app"
-  />
-
-  <meta property="og:title" content="Open post in app" />
-  <meta property="og:description" content="Tap to open the post in the mobile app." />
-  <meta property="og:type" content="website" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Открытие приложения</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <main class="wrap">
-    <section class="card">
-      <div class="badge">Deep Link</div>
-      <h1 id="title">Открытие поста…</h1>
-      <p id="desc" class="desc">
-        Пытаемся открыть пост в приложении.
-      </p>
+    <section class="card" id="card">
+      <h1 id="title">Открываем приложение…</h1>
+      <p id="text">Подождите, пытаемся открыть пост в приложении.</p>
 
-      <div class="actions">
-        <a id="openAppBtn" class="btn primary" href="#">Открыть в приложении</a>
-        <a id="storeBtn" class="btn secondary" href="#" rel="noopener noreferrer">
-          Скачать приложение
+      <div id="fallback" class="fallback hidden">
+        <a
+          class="btn"
+          href="https://play.google.com/store/apps/details?id=com.psoisrael.pso_app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Скачать приложение в Google Play
         </a>
-      </div>
-
-      <div class="info">
-        <p><strong>ID поста:</strong> <span id="postId">—</span></p>
-        <p><strong>Ссылка:</strong> <span id="currentUrl">—</span></p>
-      </div>
-
-      <hr />
-
-      <div class="small">
-        <p id="statusText">
-          Если приложение не открылось автоматически, нажми кнопку выше.
-        </p>
       </div>
     </section>
   </main>

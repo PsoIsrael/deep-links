@@ -1,28 +1,14 @@
-:root {
-  --bg: #0f172a;
-  --card: #111827;
-  --line: #263245;
-  --text: #f8fafc;
-  --muted: #cbd5e1;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --secondary: #1f2937;
-  --secondary-hover: #374151;
-  --badge: #0b5ed7;
-}
-
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
 }
 
 body {
@@ -38,42 +24,33 @@ body {
 
 .card {
   width: 100%;
-  max-width: 560px;
-  background: rgba(17, 24, 39, 0.96);
-  border: 1px solid var(--line);
-  border-radius: 20px;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
   padding: 24px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-}
-
-.badge {
-  display: inline-block;
-  background: var(--badge);
-  color: white;
-  font-size: 12px;
-  line-height: 1;
-  padding: 8px 10px;
-  border-radius: 999px;
-  margin-bottom: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
 h1 {
   margin: 0 0 12px;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.2;
 }
 
-.desc {
-  margin: 0 0 20px;
-  color: var(--muted);
+p {
+  margin: 0;
+  color: #64748b;
   line-height: 1.5;
 }
 
-.actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+.fallback {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
@@ -82,46 +59,9 @@ h1 {
   justify-content: center;
   min-height: 46px;
   padding: 0 16px;
-  text-decoration: none;
   border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
   font-weight: 700;
-  transition: 0.2s ease;
-}
-
-.btn.primary {
-  background: var(--primary);
-  color: #fff;
-}
-
-.btn.primary:hover {
-  background: var(--primary-hover);
-}
-
-.btn.secondary {
-  background: var(--secondary);
-  color: #fff;
-  border: 1px solid #374151;
-}
-
-.btn.secondary:hover {
-  background: var(--secondary-hover);
-}
-
-.info {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--muted);
-  word-break: break-word;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--line);
-  margin: 20px 0;
-}
-
-.small {
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.5;
 }
