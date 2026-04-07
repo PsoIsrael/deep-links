@@ -30,7 +30,7 @@
 
   function showFallback(message) {
     titleEl.textContent = "Открыть приложение";
-    textEl.textContent = message || "Если приложение не открылось, установи его из Google Play.";
+    textEl.textContent = message || "Если приложение не открылось, установи его.";
     fallbackEl.classList.remove("hidden");
   }
 
@@ -50,7 +50,7 @@
       }, 120);
 
       setTimeout(() => {
-        showFallback("Если приложение не открылось, установи его из Google Play.");
+        showFallback("Если приложение не открылось, установи его");
       }, 1800);
     } catch {
       showFallback("Ссылка недействительна или пост больше не существует.");
